@@ -1,0 +1,267 @@
+/*!View Desktop Mode*/
+/*?General Nav Styles*/
+#nav {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.link-login-in-mobile {
+  visibility: hidden;
+}
+
+/*?TopBar*/
+#top-bar {
+  background: #436e5d;
+  padding-right: 23px;
+  height: 42px;
+  /*TODO:Delete this Style*/
+}
+
+#nav-link-in-topbar {
+  font-size: 18px;
+  color: #fff;
+}
+#nav-link-in-topbar:hover{
+  text-shadow: 0 0 .65px #fff, 0 0 .65px #fff;
+}
+/*?Container IMG logos*/
+.logo-white {
+  display: none;
+}
+
+/*?nav-items*/
+.nav-link {
+  font-size: 18px;
+  color: #4cae50;
+  margin-right: 10px;
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
+/*?nav-items hover action*/
+.nav-link:hover {
+  color: #4cae50;
+  text-shadow: 0 0 .65px #4cae50, 0 0 .65px #4cae50;
+  transition: ease-in-out 0.5s;
+}
+
+.nav-link:focus {
+  color: #4cae50;
+  text-shadow: 0 0 .65px #4cae50, 0 0 .65px #4cae50;
+}
+
+/*?nav-items Hidden Desktop-Mode*/
+#nav-items-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #collapsed-links {
+    display: none;
+  }
+
+  .navbar-expand-lg .offcanvas .offcanvas-body {
+    justify-content: flex-end;
+  }
+}
+
+
+
+/*!Switch to Mobile*/
+@media screen and (max-width: 992px) {
+
+  /*?General Nav Styles*/
+  #nav {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  nav {
+    background: #436e5d;
+    top: 0;
+    height: 60px;
+    /*TODO:Delete this Style*/
+  }
+  #link-hiden-mobile{
+    display: none;
+  }
+  /*?TopBar*/
+  #top-bar {
+    display: none;
+  }
+
+  /*?Container IMG logos*/
+  .logo-green {
+    display: none;
+  }
+
+  .logo-white {
+    display: inline-block;
+  }
+
+  /*?OFF-CANVAS*/
+  #offcanvasNavbar {
+    margin-top: 60px;
+    border-top: 0.5px solid #f2fce3;
+    width: 70%;
+  }
+
+  /*?nav-items*/
+
+  #button-mobile {
+    width: 10%;
+  }
+
+  .link-login-in-mobile {
+    font-size: 18px;
+    color: #538950;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    visibility: unset;
+    font-family: Futura;
+  }
+
+  .link-login-in-mobile:focus {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .nav-link {
+    color: #538950;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+
+  .nav-item:hover {
+    transition: all ease-in-out 0.2s;
+    border-left: solid #3e683e 5px;
+  }
+
+  .nav-item:focus {
+    transition: all ease-in-out 0.2s;
+    border-left: solid #3e683e 5px;
+  }
+
+  /*?nav-items hover action*/
+  .nav-link:hover {
+    transition: all ease-in-out 0.2s;
+    font-weight: bold;
+    color: #538950;
+  }
+
+  .nav-link:focus {
+    font-weight: bold;
+    color: #538950;
+  }
+
+  /*?nav-items Hidden Desktop-Mode*/
+  #nav-items-hidden {
+    display: block;
+  }
+
+  #nav-items-hidden:hover {
+    transition: all ease-in-out 0.2s;
+    border-left: solid #3e683e 5px;
+  }
+
+  #nav-items-hidden:focus {
+    transition: all ease-in-out 0.2s;
+    border-left: solid #3e683e 5px;
+  }
+
+  /*?offcanvas-header*/
+  .offcanvas-header {
+    margin: 0;
+    background: #436e5d;
+  }
+
+  /*!account-info*/
+  #account-info {
+    width: fit-content;
+    height: 100%;
+    margin-left: 3px;
+  }
+
+  #span-circle {
+    background-color: #f2fce3;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 1px white;
+  }
+
+  .user {
+    margin-left: 10px;
+  }
+
+  .user>p {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  /*?off-canvas-body*/
+  #offcanvas-body {
+    background-color: #f2fce3;
+    padding-top: 0;
+    padding-bottom: 0;
+
+  }
+
+  .navbar-nav {
+    height: 100%;
+    width: 100%;
+    border-left: 5px solid #3e683e;
+    margin-left: 30px;
+
+  }
+
+  @media screen and (max-height:525px) {
+    .navbar-nav {
+      height: fit-content;
+    }
+
+  }
+
+  #collapsed-links {
+    text-decoration: none;
+    color: #538950;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #collapsed-links:hover {
+    transition: all ease-in-out 0.2s;
+    border-left: solid #3e683e 5px;
+    font-weight: bold;
+  }
+
+  #collapsed-links:focus {
+    transition: all ease-in-out 0.2s;
+    border-left: solid #3e683e 5px;
+  }
+
+  #collapsed-links>a {
+    font-size: 16px;
+    color: #538950;
+    text-decoration: none;
+  }
+
+  #collapsed-links>a:hover:focus {
+    font-weight: bold;
+  }
+
+  .offcanvas-backdrop {
+    display: none !important;
+  }
+}
+
+.navbar-toggler {
+  border: 0;
+  color: transparent;
+}

@@ -1,0 +1,115 @@
+/*!TOP BAR EMAIL SUBS*/
+#email-sends{
+  margin: 0;
+}
+#section-emailsubs-links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  background:#fff ;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.section-emailsubs-links{
+  padding-left: 5px;
+  border-left: solid 2px #4cae50;
+}
+#section-emailsubs-links > a{
+  text-decoration: none;
+  color: #3f8e3f;
+  margin-right: 5px;
+}
+
+
+/*!ROW*/
+#row-emailsubs {
+  width: 100%;
+  background: #fff;
+  padding: 20px 2px 20px 2px;
+}
+
+/*!TEXT SIDE*/
+#text-side {
+  padding: 30px;
+}
+
+
+#text-side > h1 {
+  width: 50%;
+  margin-bottom: 20px;
+}
+/*!FORM SIDE*/
+#form-side {
+  background-color: #f2fce3;
+  border-radius: 10px;
+  margin-bottom: 120px;
+  width: 35%;
+}
+#email-subs-form-header {
+  border-radius: 5px 5px 0 0;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #436e5d;
+}
+#email-subs-form-header > p{
+  margin: 0;
+}
+/*!placeholder color*/
+.form-control::placeholder {
+  color: #7b9e78;
+  font-size: small;
+}
+
+/*!Button*/
+#send-email-subs {
+  width: 100%;
+  background: #538950;
+  margin-top: 120px;
+  border-radius: 0 0 5px 5px;
+  height: 50px;
+}
+#send-email-subs > button{
+    background: none;
+    border: 0;
+    text-decoration: none;
+    color: #fafafa;
+}
+#send-email-subs:hover{
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    background: #436e5e;      
+}
+
+/*!Switch to Mobile*/
+@media screen and (max-width: 1200px) {
+  #text-side > h1{
+    font-size: 20px;
+    width: 70%;
+  }
+  #form-side{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #text-side > h1{
+    font-size: 20px;
+    width: 80%;
+  }
+  #form-side{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #text-side > h1{
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #form-side{
+    width: 100%;
+  }
+}

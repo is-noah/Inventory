@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---- Animate.css library ---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!---- AniJS library ---->
+    <link rel="stylesheet" href="/libs/anijs/anijs.css" />
+    <!---- Link to Bootstrap Styles ---->
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css" />
+    <!---- Global Styles Important: Import in all components and pages ---->
+    <link rel="stylesheet" href="/style/style.css" />
+    <!---- Link to Customs Styles ---->
+    <link rel="stylesheet" href="/branches/style.css" />
+
+    <!---- Link to Inventory Navbar and Footer Components ---->
+    <link rel="stylesheet" href="/components/inventory-navbar-component/navbar-component-style.css" />
+    <link rel="stylesheet" href="/components/inventory-footer-component/inventory-footer-component.css" />
+    <!----------------->
+    <title>Franchise</title>
+</head>
+
+<body class="hidden">
+    <!---- Preloader ---->
+    <div id="inventory-loader">
+        <div class="loadingio-spinner-spinner-zcwvb6yvit8">
+            <div class="ldio-p7sos3nfe8">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!---- NavBar Component ---->
+    <navbar-component> </navbar-component>
+
+    <!----BRED-CRUMP---->
+    <div id="bred">
+        <a href="/franchise/index.html" class="section-emailsubs-links" style="font-weight: bold;">Sucursales</a>
+    </div>
+    <!-----Informacion de Sucursal  view Mobile----->
+    <!---- general-container ---->
+    <div class="container-fluid d-flex justify-content-center align-items-center" id="general-container">
+        <main class="row col-12" style="background-color: #fff; padding-bottom: 20px;">
+            <h1 class="text-center  mt-4 mb-4" id="headings-text">
+                Informacion de Sucursal
+            </h1>
+            <!---- FORM SIDE ---->
+            <div class="col-12  d-flex justify-content-center align-items-center">
+                <form action="" class="w-100 d-flex justify-content-center align-items-center flex-column"
+                    id="form-franchise">
+                    <!---- FORM HEADER MOBILE ---->
+                    <div class="container-fluid" id="form-header-mobile">
+                        <div class="row">
+                            <div class="col-2 p-1 d-flex align-items-center justify-content-center"
+                                style="border-right: 4px solid #fff; background: #436e5d;
+                                border-radius: 5px 0 0 0 ;">
+                                <div>
+                                    <a href="/branches/mobile-view.html">
+                                        <img src="/images/left-white-arrow.png" alt="<" width="30"
+                                            data-anijs="if: click, do: bounceIn animated, to: $ancestors target | .container-box">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-10 d-flex align-items-center justify-content-center"
+                                id="contain-text-header-form">
+                                <p class=" text-white">Starbucs en Parque Avenida</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="/images/Group 247.png" alt="..." width="80" class="m-4" />
+
+                    <!---- INFO ---->
+                    <div id="text-form-franchise">
+                        <p class="text-center text-warp">
+                            *Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Possimus, amet commodi id nulla impedit est, velit neque ab
+                            vitae, autem reprehenderit ex.
+                        </p>
+                    </div>
+
+                    <!---- Container-Inputs 01  ---->
+                    <div class="container mt-4" id="inputs-form-franchise">
+                        <div class="row m-2">
+                            <p style="font-weight: 600;" id="title-inputs" class="title-inputs">Información de la
+                                Sucursal</p>
+                            <!---- INPUT NAME OF SUCURSAL ID = "name-of-sursal" ---->
+                            <div class="col-12 mt-1 mb-1">
+                                <input class="form-control" type="text" placeholder="Nombre de Sucursal"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    id="name-of-sursal" />
+                            </div>
+                            <!---- INPUT NAME OF STREET ID = "name-of-street" ---->
+                            <div class="col-12 mb-1">
+                                <input class="form-control" type="text" placeholder="Nombre de la calle"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    id="name-of-street" />
+                            </div>
+                            <!---- INPUT NAME OF CITY ID ="name-of-city" ---->
+                            <div class="col-5 mb-1">
+                                <input class="form-control" type="text" placeholder="Ciudad"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    id="name-of-city" />
+                            </div>
+                            <!---- State ID = "name-of-state"  ---->
+                            <div class="col-4 mb-1">
+                                <input class="form-control" type="text" placeholder="Estado"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    id="name-of-state" />
+                            </div>
+                            <!---- ZIP  ID ="zip"---->
+                            <div class="col-3 mb-1">
+                                <input class="form-control" type="text" placeholder="ZIP"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    id="ZIP" />
+                            </div>
+                            <!---- PHONE ID = "phone"---->
+                            <div class="col-12">
+                                <input class="form-control" type="number" placeholder="Teléfono"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    id="phone" />
+                            </div>
+                        </div>
+                    </div>
+                    <!---- Container-Inputs 02 ---->
+                    <div class="container" id="inputs-form-franchise">
+                        <div class="row m-2">
+                            <div class="col-12">
+                                <p style="font-weight: 600; margin: 0;" id="title-inputs" class="title-inputs">
+                                    Informacion de Conexión</p>
+                            </div>
+                            <!---- IP ---->
+                            <div class="col-6 mt-1 mb-1">
+                                <input class="form-control" type="number" placeholder="Dirección IP"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    id="" />
+                            </div>
+                            <!---- PORT ---->
+                            <div class="col-6 mt-1 mb-1">
+                                <input class="form-control" type="email" placeholder="Puerto"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    required />
+                            </div>
+                            <!---- USER ---->
+                            <div class="col-6 mt-1 mb-1">
+                                <input class="form-control" type="email" placeholder="Usuario"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    required />
+                            </div>
+                            <!---- PASS ---->
+                            <div class="col-6 mt-1 mb-1">
+                                <input class="form-control" type="email" placeholder="Contraseña"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    required />
+                            </div>
+                            <!---- DATABASE ---->
+                            <div class="col-6 mt-1 mb-1">
+                                <input class="form-control" type="email" placeholder="Nombre de Base de Datos"
+                                    aria-label="default input example" style="margin-top: 10px; margin-bottom: 10px"
+                                    required />
+                            </div>
+                            <!---- VERIFY SIGNAL ---->
+                            <div class="col-6 mt-1 mb-1 d-flex align-items-center justify-content-start w-50">
+                                <a href="" id="verify-conect">
+                                    <img src="/images/exclamation blue.png" alt="!" width="15"
+                                        style="margin-right: 5px;">
+                                    Verificar conexión</a>
+                            </div>
+                            <!---- BUTTOMS ---->
+                            <div class="mt-1 mb-1 d-flex align-items-center justify-content-center col-12"
+                                id="btn-form-franchies">
+                                <button type="submit" class="btn btn-success"
+                                    style="background:#538950 ;">Guardar</button>
+                                <button type="submit" class="btn btn-danger"
+                                    style="background: #e24747;">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!---- Footer Component ---->
+    <footer-component style="z-index: 1"> </footer-component>
+    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/components/inventory-footer-component/inventory-footer-component.js"></script>
+    <script src="/components/inventory-navbar-component/navbar-component.js"></script>
+    <script src="/libs/anijs/anijs-min.js"></script>
+    <script src="/components/inventory-navbar-component/changeicon.js"></script>
+    <!----jQuery v3.6.1---->
+    <script src="/libs/jQuery v3.6.1/jQuery.js"></script>
+    <script src="/libs/jQuery v3.6.1/preloader/preloader.js"></script>
+</body>
+
+</html>

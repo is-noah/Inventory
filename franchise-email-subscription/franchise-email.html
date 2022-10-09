@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---- Link to Bootstrap Styles ---->
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <!---- Global Styles Important: Import in all components and pages ---->
+    <link rel="stylesheet" href="/style/style.css">
+    <!---- Link to Customs Styles ---->
+    <link rel="stylesheet" href="/franchise-email-subscription/email-subscription.css">
+    <!---- Animate.css library ---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!---- AniJS library ---->
+    <link rel="stylesheet" href="/libs/anijs/anijs.css">
+    <title>email-subscription</title>
+
+
+    <!----------------->
+    <!---- Link to Inventory Navbar and Footer Components ---->
+    <link rel="stylesheet" href="/components/inventory-navbar-component/navbar-component-style.css">
+    <link rel="stylesheet" href="/components/inventory-footer-component/inventory-footer-component.css">
+    <!----------------->
+</head>
+
+<body class="hidden">
+        <!---- Preloader ---->
+        <div id="inventory-loader">
+            <div class="loadingio-spinner-spinner-zcwvb6yvit8">
+                <div class="ldio-p7sos3nfe8">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    <!---- NavBar Component ---->
+    <navbar-component> </navbar-component>
+    <!----Breadcrumb Email-Subscription ---->
+    <div id="bred">
+        <a href="" class="section-emailsubs-links">Mi Cuenta</a>
+        <a> > </a>
+        <a href="/franchise-email-subscription/franchise-email.html" class="animate__animated animate__flash">Enviar
+            Subscripción de Franquicia</a>
+    </div>
+    <!---- END Breadcrumb ---->
+    <main id="email-sends">
+        <div class="container-fluid d-flex justify-content-center align-items-center" id="general-container">
+            <!----ROW---->
+            <div class="row col-12" id="row-emailsubs">
+                <!---- TEXT SIDE ---->
+                <div class="col-12 d-flex justify-content-center align-items-center" id="text-side">
+                    <h1 class="text-center text-warp" id="headings-text">Enviar correos de invitación a los clientes
+                        para la inscripción en
+                        el sistema Inventario</h1>
+                </div>
+                <!---- FORM SIDE ---->
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <form id="form-side" novalidate>
+                        <!---- FORM HEADER ---->
+                        <div id="email-subs-form-header">
+                            <p class="text-white d-flex align-content-center">
+                                <img src="/images/mail-green.png" alt="mail-green" width="25"
+                                    style="margin-right: 10px;">
+                                Correos
+                            </p>
+                        </div>
+
+                        <!---- Container-Inputs ---->
+                        <div class="container">
+                            <div class="row m-2">
+                                <!---- INPUT01 ---->
+                                <div class="col-10 d-flex justify-content-center align-items-center w-100">
+                                    <input class="form-control" type="email" placeholder="allsmart@allsmart.com"
+                                        aria-label="default input example" style="margin-top: 10px; margin-bottom:10px;"
+                                        required>
+
+                                    <button style="background: none; border: none; margin: 0;" type="submit">
+                                        <img src="/images/plus.png" width="30" style="margin-left: 5px;">
+                                    </button>
+                                </div>
+                                <!---- INPUT02 ---->
+                                <div class="col-10 d-flex justify-content-center align-items-center w-100">
+                                    <input class="form-control" type="email" placeholder="Entre correo electrónico"
+                                        aria-label="default input example"
+                                        style="margin-top: 10px; margin-bottom:10px;">
+                                    <button style="background: none; border: none; margin: 0;">
+                                        <img src="/images/delete.png" width="30" style="margin-left: 5px;">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!---- Button ---->
+                        <div class="d-flex justify-content-center align-items-center" id="send-email-subs">
+                            <img src="/images/send.png" class="animate__animated animate__flash" alt="" width="28"
+                                style="margin-right: 10px;">
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!---- Footer Component ---->
+    <footer-component> </footer-component>
+    <!---- Scripts of Bootstrap ---->
+    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/franchise-email-subscription/emailsubs-validate.js"></script>
+    <script src="/components/inventory-footer-component/inventory-footer-component.js"></script>
+    <script src="/components/inventory-navbar-component/navbar-component.js"></script>
+    <script src="/libs/anijs/anijs-min.js"></script>
+    <script src="/components/inventory-navbar-component/changeicon.js"></script>
+    <script src="/components/inventory-navbar-component/changeicon.js"></script>
+        <!----jQuery v3.6.1---->
+        <script src="/libs/jQuery v3.6.1/jQuery.js"></script>
+        <script src="/libs/jQuery v3.6.1/preloader/preloader.js"></script>
+</body>
+
+</html>

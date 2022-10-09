@@ -1,0 +1,126 @@
+
+#form-header-mobile{
+    background: #436e5d;
+    border-radius: 5px 5px 0 0;
+}
+#general-container {
+    padding-bottom: 20px;
+}
+
+#form-franchise {
+    background: #f2fce3;
+    padding-bottom: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+#text-form-franchise {
+    width: 55%;
+}
+
+#text-form-franchise>p {
+    color: #7b9e78;
+    line-height: 1.2;
+}
+
+
+.franchise-form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #436e5d;
+    width: 100%;
+}
+
+
+/*!placeholder color*/
+.form-control::placeholder {
+    color: #7b9e78;
+    font-size: small;
+}
+
+#title-inputs {
+    color: #436e5d;
+}
+
+.title-inputs {
+    border-bottom: solid 2px #538950;
+    width: fit-content;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+    margin-left: 15px;
+}
+
+a {
+    font-size: small;
+}
+
+.form-select {
+    border-radius: 8px ;
+    color: #7b9e78;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#verify-conect {
+    color: #4bc63e;
+}
+
+@media screen and (max-width:992px) {
+    #general-container {
+        padding: 10px 5px 0px 5px;
+
+    }
+
+    #text-form-franchise {
+        width: 80%;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    #btn-form-franchies>button {
+        margin: 5px;
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.2;
+
+    }
+    
+    .franchise-form-header{
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #inputs-form-franchise {
+        width: 75%;
+    }
+
+    #btn-form-franchies>button {
+        margin: 5px;
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+}
+
+#container-dates-franchise {
+    transition: all ease-in-out 0.5s;
+}
+
+#container-dates-franchise:hover {
+    transition: all ease-in-out 0.5s;
+    background: #f2fce3;
+    cursor: pointer;
+}
